@@ -1,0 +1,96 @@
+.sobremim {
+  background-color: #403538;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: -60px;
+}
+
+.geral-sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.coluna-esquerda {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coluna-direita {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paragrafos-lado-a-lado {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-parte1,
+.texto-parte2 {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.titulo-sobre {
+  color: #fff;
+  font-size: 4.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+}
+
+.titulo-sobre span {
+  display: block; /* Cada span será tratado como um bloco, forçando a quebra de linha */
+}
+
+.paragrafo-sobre {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .geral-sobre {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 30px;
+  }
+  .titulo-sobre {
+    display: inline-block;
+    white-space: nowrap; /* Mantém o texto em uma única linha */
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+  .titulo-sobre span {
+    display: inline; /* Faz com que cada palavra fique na mesma linha */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .titulo-sobre {
+    font-size: 3rem;
+  }
+
+  .paragrafos-lado-a-lado {
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+  }
+
+  .texto-parte1,
+  .texto-parte2 {
+    margin-right: 0; /* Remove a margem direita */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar os parágrafos */
+  }
+}

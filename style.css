@@ -1,0 +1,261 @@
+
+/* HEADER */ 
+
+.header-index {
+  background-color: #403538;
+  width: auto;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.header-index img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.nav-header a {
+  margin: 4px;
+  padding: 4px;
+}
+
+.nav-header span {
+  margin-left: 30px;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* INICIO INDEX */
+.index-parte1 {
+  background-color: #F6E3FA;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundo-index {
+  padding: 80px;
+}
+
+.pessoa {
+  padding: 80px;
+}
+
+.nome-principal {
+font-size: 6rem;
+color: #403538;
+margin-bottom: 30px;
+font-family: "Kaisei Tokumin", serif;
+font-weight: 800;
+font-style: normal;
+line-height: 1; /* Reduz a altura da linha para aproximar as palavras */
+}
+
+/* ANIMAÇAO nome principal */
+
+.nome-animado {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+}
+
+.nome1 {
+  animation-delay: 0.5s;
+}
+
+.nome2 {
+  animation-delay: 0.7s;
+}
+
+.nome3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ANIMAÇAO ESCRITA ENTRANDO */
+
+.numeros-index {
+  color: #403538;
+  font-size: 0.8rem;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: italic;
+  white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 5s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+/* ANIMAÇAO FADEIN */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+  }
+  to {
+    opacity: 1; /* Torna-se completamente visível */
+  }
+}
+
+/* Aplica a animação aos elementos */
+.fade-in {
+  animation: fadeIn 2s ease-out forwards; /* 2 segundos de duração, com efeito de desaceleração no final */
+}
+
+/* Classe base para os elementos invisíveis no início */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Move o elemento para baixo para criar um efeito de entrada */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Classe aplicada quando o elemento está visível */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fundo-index p {
+  color: #403538;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  max-width: 500px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Estilo para os botões */
+
+.botao-1 {
+background: #2F2427;
+  cursor: pointer;
+}
+
+.botao-1 span {
+  color: #fff;
+}
+
+.botao-2 {
+border: 2px solid #2F2427;
+background: #F6E3FA;
+  cursor: pointer;
+}
+
+.botao-2 span {
+  color: #2F2427;
+}
+
+.div-botao button {
+  font-family: "Roboto", cursive;
+  border-radius: 120px;
+  padding: 8px 12px;
+}
+
+.div-botao button:hover {
+  transform: translateY(-3px);
+  transition: all 0.8s;
+}
+
+.div-botao button span {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Kaisei Tokumin", serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.div-botao a {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+
+@media (max-width: 1200px) {
+
+.fundo-index {
+  padding: 0px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.pessoa {
+  padding: 0px;
+}
+}
+
+@media (max-width: 900px) {
+
+  .index-parte1 {
+    padding: 30px;
+  }
+
+  .nome-principal {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  }
+  
+  .numeros-index {
+    font-size: 0.6rem;
+  }
+  
+  .fundo-index p {
+    font-size: 1.1rem;
+    max-width: auto;
+    margin-right: 30px;
+  }
+
+  .pessoa img {
+width: 260px;
+height: 400px;
+  }
+}
+
+@media (max-width: 660px) {
+  .index-parte1 {
+    background-color: #F6E3FA;
+    max-width: auto;
+    display: grid;
+  }
+}
+
+@media (max-width: 480px) {
+.botao-1 {
+  display: grid;
+  margin-bottom: 16px;
+}
+
+.fundo-index {
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-index span {
+  display: none;
+}
+}

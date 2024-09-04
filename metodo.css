@@ -1,0 +1,60 @@
+.sobre-metodo {
+  background-color: #F6E3FA;
+}
+
+.titulo-metodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #403538;
+  font-size: 3rem;
+font-family: "Kaisei Tokumin", serif;
+font-weight: 600;
+font-style: bold;
+padding: 30px;
+}
+
+.text-coluna1 {
+  color: #403538;
+  font-size: 1rem;
+font-family: "Kaisei Tokumin", serif;
+font-weight: 400;
+font-style: normal;
+text-align: right;
+margin-right: 30px;
+max-width: 540px;
+}
+
+.text-coluna2 {
+  color: #403538;
+  font-size: 1rem;
+font-family: "Kaisei Tokumin", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.coluna1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.colunas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .coluna1 {
+    flex-direction: column; /* Altera a direção do flexbox para coluna */
+  }
+  
+  .text-coluna1 {
+  text-align: left;
+  margin-bottom: 30px;
+  }
+}

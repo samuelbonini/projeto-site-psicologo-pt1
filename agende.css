@@ -1,0 +1,157 @@
+/* INICIO INDEX */
+.agende-conteudo {
+  background-color: #1f1519;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agende-fundo {
+  padding: 40px;
+  margin-right: 30px;
+}
+
+.local {
+  padding: 40px;
+}
+
+.titulo-agende {
+  font-size: 4rem;
+  color: #f6e3fa;
+  margin-bottom: 30px;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.agende-fundo p {
+  color: #f6e3fa;
+  font-size: 1rem;
+  margin-top: 10px;
+  max-width: 500px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Estilo para os botões */
+
+.botao-1-agende {
+  background: #F6E3FA;
+  cursor: pointer;
+}
+
+.botao-1-agende span {
+  color: #1F1519;
+  align-items: center;
+justify-content: center;
+
+}
+
+.botao-2-agende {
+  border: 2px solid #F6E3FA;
+  background: #1F1519;
+  cursor: pointer;
+}
+
+.botao-2-agende span {
+  color: #F6E3FA;
+  align-items: center;
+justify-content: center;
+}
+
+.div-botao-agende button {
+  font-family: "Roboto", cursive;
+  border-radius: 120px;
+  padding: 8px 16px;
+}
+
+.div-botao-agende button:hover {
+  transform: translateY(-3px);
+  transition: all 0.8s;
+}
+
+.div-botao-agende button span {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.div-botao-agende a {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+
+@media (max-width: 1100px) {
+  .agende-conteudo {
+    padding: 30px;
+      max-width: auto;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .local {
+    display: grid;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+
+  .titulo-agende {
+    font-size: 4rem;
+  }
+
+  .agende-fundo p {
+    font-size: 1.1rem;
+    margin-right: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .agende-conteudo {
+    max-width: auto;
+    display: grid;
+  }
+  .local-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .local {
+  margin-left:2px;
+  margin-right: 2px;
+  }
+  .titulo-agende {
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .botao-1 {
+    display: grid;
+    margin-bottom: 16px;
+  }
+
+  .agende-fundo {
+    padding-left: 30px;
+    margin-top: -30px;
+  }
+  .titulo-agende {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+.botao-1-agende {
+ margin-bottom: 10px;
+}
+}
