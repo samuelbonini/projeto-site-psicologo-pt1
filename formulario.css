@@ -1,0 +1,134 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #403538;
+    padding: 60px;
+}
+
+.conteudo-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 45px;
+    background: #1f1519;
+    width: 500px;
+    box-shadow: #2c2326 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.formulario h2 {
+    font-size: 2rem;
+    color: #F6E3FA;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario form label {
+    font-size: 1rem;
+    color: #F6E3FA;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4px;
+}
+
+.formulario form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+}
+
+.formulario form input:focus {
+border-radius: 16px;
+}
+
+.formulario form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.formulario form textarea:focus {
+    border-radius: 16px;
+}
+
+.formulario form button {
+    padding: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #F6E3FA;
+    font-size: 1rem;
+    color: #F6E3FA;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: all 0.6s;
+    margin-bottom: 20px;
+}
+
+.formulario form button:hover {
+background: #F6E3FA;
+color: #1f1519;
+border-radius: 16px;
+}
+
+/* PAGINA OBRIGADO */ 
+.conteudo-obrigado {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: #1f1519;
+flex-direction: column;
+}
+
+.conteudo-obrigado h1 {
+    font-size: 2rem;
+    color: #F6E3FA;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.conteudo-obrigado p {
+    font-size: 1.2rem;
+    color: #F6E3FA;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+.conteudo-obrigado a {
+    padding: 15px 55px;
+    text-decoration: none;
+    background: #F6E3FA;
+    font-size: 1.2rem;
+    color: #1f1519;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: all 0.5s;
+}
+
+.conteudo-obrigado a:hover {
+    border-radius: 16px;
+}
+
+
+

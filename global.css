@@ -3,6 +3,7 @@
 @import url(metodo.css);
 @import url(agende.css);
 @import url(endereco-mapa.css);
+@import url(formulario.css);
 
 * {
   padding: 0;
