@@ -154,6 +154,12 @@ line-height: 1; /* Reduz a altura da linha para aproximar as palavras */
 .botao-1 {
 background: #2F2427;
   cursor: pointer;
+border: 2px solid #2F2427;
+transition: 0.6s;
+}
+
+.botao-1:hover {
+  background: #635358;
 }
 
 .botao-1 span {
@@ -164,10 +170,20 @@ background: #2F2427;
 border: 2px solid #2F2427;
 background: #F6E3FA;
   cursor: pointer;
+transition: 0.6s;
+}
+
+.botao-2:hover {
+  background: #635358;
 }
 
 .botao-2 span {
   color: #2F2427;
+transition: 0.4s;
+}
+
+.botao-2 span:hover {
+  color: #F6E3FA;
 }
 
 .div-botao button {

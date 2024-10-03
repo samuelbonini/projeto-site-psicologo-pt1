@@ -75,3 +75,31 @@ margin-bottom: 5px;
   font-size: 1.2rem;
 }
 }
+
+/* FOOTER */ 
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6E3FA;
+}
+
+footer p {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #403538;
+}
+
+footer a {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1rem;
+  color: #403538;
+  font-style: italic;
+}
